@@ -1,4 +1,4 @@
-/* Глобальне скидання стилів для h1-h6, p, ul (B1) */
+/* Глобальне скидання стилів для h1-h6, p, ul */
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
@@ -11,32 +11,32 @@ h1, h2, h3, h4, h5, h6, p, ul {
     background-color: #ffffff;
   }
   
-  /* Стиль для всіх зображень (Додаткові вимоги: display: block) */
+  /* Стиль для всіх зображень */
   img {
     display: block;
   }
   
-  /* Контейнер для центрування контенту (B6, B8, B9) */
+  /* Контейнер для центрування контенту */
   .container {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
   }
   
-  /* Загальний клас для всіх секцій (B15) */
+  /* Загальний клас для всіх секцій */
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
   }
   
-  /* Стилі для хедера (B13, Додаткові вимоги: padding) */
+  /* Стилі для хедера */
   .header {
     border-bottom: 1px solid #e7e9fc;
   }
   
   .header .container {
     display: flex;
-    padding: 24px 15px;
+    padding: 0 15px; /* Горизонтальні відступи для вмісту хедера */
   }
   
   .navigation {
@@ -70,6 +70,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 1.5;
     color: #2e2f42;
     text-decoration: none;
+    padding: 24px 0; /* Вертикальні відступи всередині посилань */
+    display: block;  /* Для коректного застосування відступів */
   }
   
   .nav-link:hover,
@@ -92,6 +94,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 1.5;
     color: #434455;
     text-decoration: none;
+    padding: 24px 0; /* Вертикальні відступи всередині посилань */
+    display: block;  /* Для коректного застосування відступів */
   }
   
   .contact-link:hover,
@@ -99,7 +103,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: #404bbf;
   }
   
-  /* Hero Section (First Section, Додаткові вимоги: button styles) */
+  /* Hero Section */
   .hero-section {
     background-color: #2e2f42;
     text-align: center;
@@ -135,7 +139,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     background-color: #404bbf;
   }
   
-  /* Features Section (Second Section) */
+  /* Features Section */
   .features-list {
     display: flex;
     gap: 24px;
@@ -159,7 +163,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 1.5;
   }
   
-  /* Team Section (Third Section, Додаткові вимоги: div, classes, padding, text-align) */
+  /* Team Section */
   .team-section {
     background-color: #f4f4fd;
   }
@@ -203,7 +207,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     text-align: center;
   }
   
-  /* Portfolio Section (Fourth Section, Додаткові вимоги: div, padding, border) */
+  /* Portfolio Section */
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
