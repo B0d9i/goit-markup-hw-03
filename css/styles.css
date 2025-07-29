@@ -11,6 +11,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
     background-color: #ffffff;
   }
   
+  /* Стиль для всіх зображень (Додаткові вимоги: display: block) */
+  img {
+    display: block;
+  }
+  
   /* Контейнер для центрування контенту (B6, B8, B9) */
   .container {
     width: 1158px;
@@ -24,9 +29,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
     padding-bottom: 120px;
   }
   
-  /* Стилі для хедера (B13) */
+  /* Стилі для хедера (B13, Додаткові вимоги: display: flex для контейнера, padding) */
   .header {
     border-bottom: 1px solid #e7e9fc;
+  }
+  
+  .header .container {
+    display: flex;
+    padding: 24px 0;
   }
   
   .navigation {
@@ -89,7 +99,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: #404bbf;
   }
   
-  /* Hero Section */
+  /* Hero Section (First Section, Додаткові вимоги: button styles) */
   .hero-section {
     background-color: #2e2f42;
     text-align: center;
@@ -115,6 +125,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
     border-radius: 4px;
     padding: 16px 32px;
     cursor: pointer;
+    display: block;
+    min-width: 169px;
+    margin: 0 auto;
   }
   
   .hero-button:hover,
@@ -122,7 +135,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     background-color: #404bbf;
   }
   
-  /* Features Section */
+  /* Features Section (Second Section) */
   .features-list {
     display: flex;
     gap: 24px;
@@ -146,7 +159,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 1.5;
   }
   
-  /* Team Section */
+  /* Team Section (Third Section, Додаткові вимоги: div, classes, padding, text-align) */
   .team-section {
     background-color: #f4f4fd;
   }
@@ -171,6 +184,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
   
+  .team-member-info {
+    padding: 32px 0;
+  }
+  
   .team-member-name {
     font-weight: 500;
     font-size: 20px;
@@ -178,17 +195,15 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: #2e2f42;
     text-align: center;
     margin-bottom: 8px;
-    padding: 32px 0 8px;
   }
   
-  .team-member-position {
+  .team-member-role {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    padding-bottom: 32px;
   }
   
-  /* Portfolio Section */
+  /* Portfolio Section (Fourth Section, Додаткові вимоги: div, padding, border) */
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -197,7 +212,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
   }
   
   .portfolio-item {
-    border-bottom: 1px solid #e7e9fc; /* B16 */
+    /* border-bottom already set in portfolio-info */
+  }
+  
+  .portfolio-info {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
   }
   
   .portfolio-title {
@@ -206,13 +227,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 1.2;
     color: #2e2f42;
     margin-bottom: 8px;
-    padding: 32px 16px 8px;
   }
   
   .portfolio-category {
     font-size: 16px;
     line-height: 1.5;
-    padding: 0 16px 32px;
   }
   
   /* Footer */
