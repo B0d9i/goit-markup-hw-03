@@ -14,6 +14,7 @@ body {
 /* Стиль для всіх зображень */
 img {
   display: block;
+  
 }
 
 /* Контейнер для центрування контенту */
@@ -32,9 +33,7 @@ img {
 /* Стилі для хедера */
 .header {
   border-bottom: 1px solid #e7e9fc;
-  padding: 0 15px 0 15px;
-  padding-top: 24px; 
-  padding-bottom: 24px;
+  
 }
 
 .header .container {
@@ -55,6 +54,7 @@ img {
   color: #4d5ae5;
   text-decoration: none;
   margin-right: 76px;
+  text-transform: uppercase;
 }
 
 .logo-studio {
@@ -84,6 +84,7 @@ img {
 
 .contact-info {
   margin-left: auto;
+  font-style: normal;
 }
 
 .contact-list {
@@ -256,6 +257,7 @@ img {
   text-decoration: none;
   display: inline-block;
   margin-bottom: 16px;
+  text-transform: uppercase;
 }
 
 .footer-logo-studio {
